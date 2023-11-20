@@ -154,27 +154,6 @@ INSERT INTO peopleskills(people_id, skills_id) values
     (10,4),
     (10,5);
 
-SELECT * from peopleskills;
-SELECT count(*) FROM peopleskills;
-
-
-SELECT * from peopleroles;
-SELECT * from roles;
-
-## delete from skills where id=3;
-
-SELECT
-    first_name,
-    last_name,
-    tag
-from
-    peopleskills a
-    INNER JOIN people b on (a.people_id=b.id)
-    INNER JOIN skills c on (a.skills_id=c.id)
-WHERE
-    skills_id=6
-;
-
 # Section 8
 # Create roles( id, name, sort_priority )
 # sort_priority is an integer and is used to provide an order for sorting roles
